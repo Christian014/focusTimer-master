@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+
+
+body{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    width: 90.0rem;
+    height: 100vh;
+
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90.0rem;
+}
+
+.timer{
+    width: 32.0rem;
+    height: 21.5rem;
+    display: grid;
+    gap: 4rem;
+
+    margin-top: -3rem;
+}
+i{
+    color: black;
+    font-size: 6rem;
+}
+
+i:hover{
+    cursor: pointer;
+}
+.timer .spans-timer{
+    display: flex;
+    gap: .5rem;
+}
+
+.spans-timer span{
+    font-size: 12.7rem;
+    /* color:#323238; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.configImg-timer{
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.buttons-timer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons-timer button{
+    border: none;
+    background: none;
+}
+
+.cards{
+    display: grid;
+    grid-template-areas: "a b"
+               "c d";
+    gap: 3.2rem;
+}
+
+.cards :nth-child(1){
+    grid-area: a;
+}
+.cards :nth-child(2){
+    grid-area: b;
+    
+}
+.cards:nth-child(2):hover{
+    
+    background: #014e65;
+}
+.cards :nth-child(3){
+    grid-area: c;
+}
+.cards :nth-child(4){
+    grid-area: d;
+}
+
+.cards-wrapper{
+    width: 30.8rem;
+    height: 33.6rem;
+}
+
+.cards button{
+    width: 15.0rem;
+    height: 15.0rem;
+    border: none;
+    border-radius: 2.4rem;
+    background: #E1E1E6;
+}
+
+
+.cards button:hover{
+    cursor: pointer;
+    background: #b7b7bc;
+}
+
+.timer img:hover{
+    cursor: pointer;
+    scale: 1.1;
+    transition: 1s;
+}
+
+header img{
+    position: absolute;
+    right: 0;
+    padding-right: 6.0rem;
+    padding-top: 6.0rem;
+    
+}
+
+header img:hover{
+    cursor: pointer;
+}
+
+header .close{
+    opacity: 0;
+    display: none;
+}
+.cards button input{
+    margin-top: 20px;
+    -webkit-appearance: none;
+    background: black;
+    border: none;
+    outline: none;
+    width: 80%;
+    height: .4rem;
+    border-radius: 9px;   
+}
+
+.cards button input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%; 
+    
+        background: black;
+        cursor: pointer;
+}

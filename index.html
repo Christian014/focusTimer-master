@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusTimer 2.0</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/faviconClock.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-imgs">
+            <img class="sol" src="images/icon.png" alt="">
+            <img class="lua close" src="images/icon (1).png" alt="" >
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="timer">
+                <h1 class="spans-timer">
+                    <span id="minutes" class="minutes">25</span>
+                    <span>:</span>
+                    <span id="seconds" class="seconds">00</span>
+                </h1>
+    
+                <div class="buttons-timer">
+                    <button id="play" class="play bttColor"><i class="ph ph-play-circle"></i></button>
+                    <button class="stop bttColor"><i class="ph ph-stop-circle"></i></button>
+                    <button class="increase bttColor"><i class="ph ph-plus-circle configImg-timer"></i></button>
+                    <button class="toDecrease bttColor"><i class="ph ph-minus-circle"></i></button>
+                </div>
+            </div>
+    
+            <div class="cards-wrapper">
+                <div class="cards">
+                    <button class="tree"><img class="configImg-cards" src="images/cardArvore.png" alt="desenho de uma arvore dentro de um card"><input class="inputTree" type="range" min="0" max="100" value="50" name="" id=""></button>
+
+                    <button class="chuva rain" style="background: #02799D;"><img class="configImg-cards" src="images/cardChuva.png" alt="desenho clima chuvoso dentro de um card"><input class="inputRain" type="range" min="0" max="100" value="50"name="" id=""></button>
+
+                    <button class="house"><img class="configImg-cards" src="images/cardCasa.png" alt="desenho de uma casa dentro de um card"><input class="inputHouse" type="range" min="0" max="100" value="50"name="" id=""></button>
+                    
+                    <button class="fire"><img class="configImg-cards" src="images/cardFogo.png" alt="desenho de um fogo dentro de um card"><input class="inputFire" type="range" min="0" max="100" value="50"name="" id=""></button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+</html>
